@@ -4,65 +4,66 @@
     <meta charset="utf-8">
     <title>任务十八：基础JavaScript练习（一）</title>
     <style type="text/css">
-	    h1{
-		  font-size:20px;
-		  color:#666;
-		  font-weight:bold;
-		  text-align:center;
-		}
-		#input {
-		  width: 240px;
-		  height: 26px;
-		  border: 1px solid #ccc;
-		  border-radius:5px;
-		  display: inline-block;
-		}
+	 h1{
+	  font-size:20px;
+	  color:#666;
+	  font-weight:bold;
+	  text-align:center;
+	}
+	#input {
+	  width: 240px;
+	  height: 26px;
+	  border: 1px solid #ccc;
+	  border-radius:5px;
+	  display: inline-block;
+	}
 
-	    button {
-		  margin-top:10px;
-		  padding: 2px 8px;
-		  border: 1px solid #ccc;
-		  border-radius: 2px;
-		  background-color:#f2f2f2;
-		  cursor: pointer;
-		}
+	 button {
+	  margin-top:10px;
+	  padding: 2px 8px;
+	  border: 1px solid #ccc;
+	  border-radius: 2px;
+	  background-color:#f2f2f2;
+	  cursor: pointer;
+	}
 
-	    button:hover {
-		  background-color: #ffc;
-		}
+    	button:hover {
+	  background-color: #ffc;
+	}
         button:focus{
-			outline:none;
-		}
-		.part1{text-align:center;}
-		.show {
-		  margin-top: 30px;
-		  text-align:center;
-		}
+          outline:none;
+	}
+	.part1{text-align:center;}
+	.show {
+	  margin-top: 30px;
+	  text-align:center;
+	}
 
-		.show .item {
-		  display: inline-block;
-		  padding: 4px 8px;
-		  margin: 0 2px;
-		  border-radius: 4px;
-		  color: #fafafa;
-		  background-color:#f99;
-		  cursor: pointer;
-		}
-	</style>
+	.show .item {
+	  display: inline-block;
+	  padding: 4px 8px;
+	  margin: 0 2px;
+	  border-radius: 4px;
+	  color: #fafafa;
+	  background-color:#f99;
+	  cursor: pointer;
+	}
+     </style>
   </head>
   <body>
-    <h1>队列游戏</h1>
-	<div class="part1">
-      <input type="text" id="input" name="input" value="" placeholder="请输入一个数字" />
-      <div class="buttons">
-        <button type="button" name="left-in" onclick="inFromLeft()">左侧入</button>
-        <button type="button" name="right-in" onclick="inFromRight()">右侧入</button>
-        <button type="button" name="left-out" onclick="outFromLeft()">左侧出</button>
-        <button type="button" name="right-out" onclick="outFromRight()">右侧出</button>
-      </div>
+    	<h1>队列游戏</h1>
+    	<div class="part1">
+	      <input type="text" id="input" name="input" value="" placeholder="请输入一个数字" />
+	      <div class="buttons">
+	        <button type="button" name="left-in" onclick="inFromLeft()">左侧入</button>
+	        <button type="button" name="right-in" onclick="inFromRight()">右侧入</button>
+	        <button type="button" name="left-out" onclick="outFromLeft()">左侧出</button>
+	        <button type="button" name="right-out" onclick="outFromRight()">右侧出</button>
+	      </div>
 	</div>
-    <div class="show" id="show"></div>
-    <script type="text/Javascript">
+        <div class="show" id="show"></div>
+        
+        <script type="text/Javascript">
 		var showEle = document.getElementById('show')
 		var inputEle = document.getElementById('input')
 
